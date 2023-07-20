@@ -1,0 +1,1 @@
+-- load all data from S3 downloaded files into duckdb database
