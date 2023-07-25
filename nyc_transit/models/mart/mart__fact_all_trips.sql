@@ -1,9 +1,5 @@
 with trips_renamed as
 (
-<<<<<<< HEAD
--- UNION ALL will use the column name from the first SELECT
-=======
->>>>>>> 29814fd (mart tables and seed made)
     select 'bike' as type, started_at_ts, ended_at_ts
     from {{ ref('stg__fhv_tripdata') }}
     union ALL
@@ -26,8 +22,4 @@ select
     ended_at_ts,
     datediff('minute', stated_at_ts, ended_at_ts) as duration_min,
     datediff('second', stated_at_ts, ended_at_ts) as duration_sec
-<<<<<<< HEAD
 from trips_renamed
-=======
-from trips_renamed
->>>>>>> 29814fd (mart tables and seed made)
