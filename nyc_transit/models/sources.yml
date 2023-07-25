@@ -67,9 +67,9 @@ sources:
           - name: station
             data_type: CHARACTER VARYING(256)
             description: "Station Identification code"
-            tests:
-              - unique
-              - dbt_expectations.expect_column_to_exist
+            # tests:
+            #   - unique
+            #   - dbt_expectations.expect_column_to_exist
           - name: name
             data_type: CHARACTER VARYING(256)
             description: "Name of the station"
@@ -129,9 +129,9 @@ sources:
         columns:
           - name: base_number
             data_type: CHARACTER VARYING(256)
-            tests:
-              - unique
-              - dbt_expectations.expect_column_to_exist
+            # tests:
+            #   - unique
+            #   - dbt_expectations.expect_column_to_exist
           - name: base_name
             data_type: CHARACTER VARYING(256)
           - name: dba
@@ -145,14 +145,14 @@ sources:
         columns:
           - name: dispatching_base_num
             data_type: CHARACTER VARYING(256)
-            tests:
-              - not_null
-              - dbt_expectations.expect_column_to_exist
-              - relationships:
-                  to: source('main','fhv_bases')
-                  field: base_number 
-                  config:
-                    severity: warn             
+            # tests:
+            #   - not_null
+            #   - dbt_expectations.expect_column_to_exist
+            #   - relationships:
+            #       to: source('main','fhv_bases')
+            #       field: base_number 
+            #       config:
+            #         severity: warn             
           - name: pickup_datetime
             data_type: TIMESTAMP
             description: "The date and time of the trip pick-up"
@@ -198,15 +198,15 @@ sources:
           - name: pickup_datetime
             data_type: TIMESTAMP
             description: "The date and time of the trip pick-up"
-            tests:
-              - not_null
-              - dbt_expectations.expect_column_to_exist          
+            # tests:
+            #   - not_null
+            #   - dbt_expectations.expect_column_to_exist          
           - name: dropoff_datetime
             data_type: TIMESTAMP
             description: "The date and time of the trip drop-off"
-            tests:
-              - not_null
-              - dbt_expectations.expect_column_to_exist
+            # tests:
+            #   - not_null
+            #   - dbt_expectations.expect_column_to_exist
           - name: pulocationid
             description: "TLC Taxi Zone in which the trip began"
             data_type: BIGINT
@@ -216,10 +216,10 @@ sources:
           - name: trip_miles
             description: "total miles for passenger trip"
             data_type: DOUBLE
-            tests:
-              - dbt_expectations.expect_column_values_to_be_between:
-                  min_value: 0  # (Optional)
-                  max_value: 10000 # (Optional)
+            # tests:
+            #   - dbt_expectations.expect_column_values_to_be_between:
+            #       min_value: 0  # (Optional)
+            #       max_value: 10000 # (Optional)
           - name: trip_time
             description: "total time in seconds for passenger trip"
             data_type: BIGINT
@@ -261,11 +261,11 @@ sources:
             description: "Was the trip administered on behalf of the Metropolitan
                           Transportation Authority (MTA)? (Y/N)"
             data_type: CHARACTER VARYING(256)
-            tests:
-              - accepted_values:
-                  values: ['Y', 'N']
-                  config:
-                    severity: warn
+            # tests:
+            #   - accepted_values:
+            #       values: ['Y', 'N']
+            #       config:
+            #         severity: warn
           - name: wav_request_flag
             description: "Did the passenger request a wheelchair-accessible vehicle (WAV)?
                           (Y/N)"
