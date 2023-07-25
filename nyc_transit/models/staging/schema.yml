@@ -4,27 +4,27 @@ models:
     columns:
       - name: started_at_ts
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: timestamp
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: timestamp
 
       - name: ended_at_ts
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: timestamp
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: timestamp
 
       - name: tripduration
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: int
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: int
 
       - name: start_station_id
         description: ""
@@ -34,25 +34,25 @@ models:
 
       - name: start_lat
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: double
-          - dbt_expectations.expect_column_values_to_be_between:
-              min_value: -90.0
-              max_value: 90.0
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: double
+        #   - dbt_expectations.expect_column_values_to_be_between:
+        #       min_value: -90.0
+        #       max_value: 90.0
 
       - name: start_lng
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: double
-          - dbt_expectations.expect_column_values_to_be_between:
-              min_value: -180.0
-              max_value: 180.0
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: double
+        #   - dbt_expectations.expect_column_values_to_be_between:
+        #       min_value: -180.0
+        #       max_value: 180.0
 
       - name: end_station_id
         description: ""
@@ -62,25 +62,25 @@ models:
 
       - name: end_lat
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: double
-          - dbt_expectations.expect_column_values_to_be_between:
-              min_value: -90.0
-              max_value: 90.0
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: double
+        #   - dbt_expectations.expect_column_values_to_be_between:
+        #       min_value: -90.0
+        #       max_value: 90.0
 
       - name: end_lng
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: double
-          - dbt_expectations.expect_column_values_to_be_between:
-              min_value: -180.0
-              max_value: 180.0
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: double
+        #   - dbt_expectations.expect_column_values_to_be_between:
+        #       min_value: -180.0
+        #       max_value: 180.0
 
       - name: filename
         description: ""
@@ -96,59 +96,59 @@ models:
 
       - name: date
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: date
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: date
 
       - name: awnd
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: double
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: double
 
       - name: prcp
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: double
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: double
 
       - name: snow
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: double
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: double
 
       - name: snwd
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: double
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: double
 
       - name: tmax
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: int
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: int
 
       - name: tmin
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: int
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: int
 
       - name: filename
         description: ""
@@ -158,132 +158,132 @@ models:
     columns:
       - name: date
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: date
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: date
 
       - name: trips
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: int
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: int
 
       - name: precipitation
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: double
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: double
 
       - name: snow_depth
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: double
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: double
 
       - name: snowfall
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: double
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: double
 
       - name: max_temperature
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: double
-          - dbt_expectations.expect_column_values_to_be_between:
-              min_value: -100.0
-              max_value: 150.0
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: double
+        #   - dbt_expectations.expect_column_values_to_be_between:
+        #       min_value: -100.0
+        #       max_value: 150.0
 
       - name: min_temperature
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: double
-          - dbt_expectations.expect_column_values_to_be_between:
-              min_value: -100.0
-              max_value: 150.0
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: double
+        #   - dbt_expectations.expect_column_values_to_be_between:
+        #       min_value: -100.0
+        #       max_value: 150.0
 
       - name: average_wind_speed
         description: ""
-        tests:
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: double
+        # tests:
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: double
 
       - name: dow
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: int
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: int
 
       - name: year
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: int
-          - dbt_expectations.expect_column_values_to_be_between:
-              min_value: 2013
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: int
+        #   - dbt_expectations.expect_column_values_to_be_between:
+        #       min_value: 2013
 
       - name: month
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: int
-          - dbt_expectations.expect_column_values_to_be_between:
-              min_value: 1
-              max_value: 12
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: int
+        #   - dbt_expectations.expect_column_values_to_be_between:
+        #       min_value: 1
+        #       max_value: 12
 
       - name: holiday
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: boolean
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: boolean
 
       - name: stations_in_service
         description: ""
-        tests:
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: int
+        # tests:
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: int
 
       - name: weekday
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: boolean
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: boolean
 
       - name: weekday_non_holiday
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: boolean
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: boolean
 
       - name: filename
         description: ""
@@ -311,10 +311,10 @@ models:
     columns:
       - name: dispatching_base_num
         description: ""
-        tests:
-        - relationships:
-            to: ref('staging','stg__fhv_bases')
-            field: base_number 
+        # tests:
+        # - relationships:
+        #     to: ref('staging','stg__fhv_bases')
+        #     field: base_number 
 
       - name: pickup_datetime
         description: ""
@@ -396,42 +396,42 @@ models:
 
       - name: shared_request_flag
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: boolean
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: boolean
 
       - name: shared_match_flag
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: boolean
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: boolean
 
       - name: access_a_ride_flag
         description: ""
-        tests:
-          # - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: boolean
+        # tests:
+        #   # - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: boolean
 
       - name: wav_request_flag
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: boolean
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: boolean
 
       - name: wav_match_flag
         description: ""
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: boolean
+        # tests:
+        #   - not_null
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: boolean
 
       - name: filename
         description: ""
@@ -450,10 +450,10 @@ models:
 
       - name: store_and_fwd_flag
         description: ""
-        tests:
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: boolean
+        # tests:
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: boolean
 
       - name: ratecodeid
         description: ""
@@ -529,10 +529,10 @@ models:
 
       - name: store_and_fwd_flag
         description: ""
-        tests:
-          - dbt_expectations.expect_column_to_exist
-          - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: boolean
+        # tests:
+        #   - dbt_expectations.expect_column_to_exist
+        #   - dbt_expectations.expect_column_values_to_be_of_type:
+        #       column_type: boolean
 
       - name: pulocationid
         description: ""
