@@ -6,10 +6,10 @@ with trips_renamed as
     select 'fhvhv' as type, pickup_datetime, dropoff_datetime, pulocationid, dolocationid
     from {{ ref('stg__fhvhv_tripdata') }}
     union all
-    select 'green' as type, pickup_datetime, dropoff_datetime, pulocationid, dolocationid
+    select 'green' as type, lpep_pickup_datetime, lpep_dropoff_datetime, pulocationid, dolocationid
     from {{ ref('stg__green_tripdata') }}
     union all
-    select 'yellow' as type, pickup_datetime, dropoff_datetime, , pulocationid, dolocationid
+    select 'yellow' as type, tpep_pickup_datetime, tpep_dropoff_datetime, pulocationid, dolocationid
     from {{ ref('stg__yellow_tripdata') }}
 )
 
