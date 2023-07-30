@@ -109,3 +109,13 @@ models:
 
       - name: duration_sec
         description: ""
+
+  - name: mart__fact_trips_by_borough
+    description: "count of taxi trips grouped by borough"
+    columns:
+      - name: puborough
+        description: "pickup borough"
+
+      - name: all_trips
+        description: "number fo taxi trips"
+
