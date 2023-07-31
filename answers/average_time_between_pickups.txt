@@ -1,0 +1,50 @@
+┌─────────────────────────────────────┬───────────────────────────────────────┐
+│                zone                 │ average_time_between_pickups_for_zone │
+│               varchar               │                double                 │
+├─────────────────────────────────────┼───────────────────────────────────────┤
+│ Battery Park                        │                    21.315310936962113 │
+│ Bay Terrace/Fort Totten             │                     4.664250265863169 │
+│ Baisley Park                        │                     5.750489516606557 │
+│ Bath Beach                          │                    2.8231185967923618 │
+│ Allerton/Pelham Gardens             │                    1.3397416316660302 │
+│ Bellerose                           │                     4.376600751729644 │
+│ Bronx Park                          │                     6.722350657146872 │
+│ Arden Heights                       │                    11.986267208690602 │
+│ Arrochar/Fort Wadsworth             │                     5.844946777498293 │
+│ Auburndale                          │                     3.895538737671854 │
+│ Astoria Park                        │                     76.83837056504599 │
+│ Belmont                             │                    0.9699533838840375 │
+│ Bloomingdale                        │                     9.384265384889893 │
+│ Bayside                             │                    1.7616256788305287 │
+│ Bronxdale                           │                    1.0536473405048632 │
+│ Bloomfield/Emerson Hill             │                     2.292004529024953 │
+│ Bensonhurst East                    │                    1.1939542285351974 │
+│ Astoria                             │                    2.0548599281337494 │
+│ Bay Ridge                           │                    0.5973209507980346 │
+│ Breezy Point/Fort Tilden/Riis Beach │                     33.39354040420064 │
+│        ·                            │                             ·         │
+│        ·                            │                             ·         │
+│        ·                            │                             ·         │
+│ Cambria Heights                     │                    2.8174053851506877 │
+│ Bushwick South                      │                     0.270736444775258 │
+│ Broad Channel                       │                     66.97620259608043 │
+│ Canarsie                            │                    0.3592774170119029 │
+│ Carroll Gardens                     │                    1.3784389343215762 │
+│ Brooklyn Navy Yard                  │                      3.98712116333774 │
+│ Brownsville                         │                    0.4025947799959765 │
+│ Brooklyn Heights                    │                      0.68980433583096 │
+│ Cobble Hill                         │                    2.2232425913527236 │
+│ Bedford Park                        │                    0.5761413207082455 │
+│ Charleston/Tottenville              │                     8.065535710180907 │
+│ Claremont/Bathgate                  │                    0.7699755761619245 │
+│ Battery Park City                   │                     4.163534940489894 │
+│ Co-Op City                          │                    5.1292993114499765 │
+│ Clinton West                        │                     2.997775586328092 │
+│ Bushwick North                      │                   0.41388228882876643 │
+│ Central Harlem                      │                    2.4558550384497817 │
+│ Clinton Hill                        │                    3.4431611474937602 │
+│ Clinton East                        │                     1.512530023597494 │
+│ Central Harlem North                │                     1.807127798928586 │
+├─────────────────────────────────────┴───────────────────────────────────────┤
+│ 50 rows (40 shown)                                                2 columns │
+└─────────────────────────────────────────────────────────────────────────────┘
