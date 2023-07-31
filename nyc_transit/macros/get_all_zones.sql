@@ -6,7 +6,7 @@
 select distinct pl.zone as zone
 from {{ ref('mart__fact_all_taxi_trips') }} t
 join {{ ref('mart__dim_locations') }} pl on (pl.locationid = t.pulocationid)
-order by 1
+order by 1 
 {% endset %}
 
 {% set results = run_query(all_zones_query) %}
